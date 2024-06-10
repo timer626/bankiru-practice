@@ -1,2 +1,1 @@
-# Гумеров Тимур
-# tg @notideass
+# frontend-practice
