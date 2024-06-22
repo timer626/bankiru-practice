@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> 
     <title>Practice</title>
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="page__header">
-        <div class="page__header-menu">
+    <header class="header">
+        <img class="header__burger" src="files/Vector.svg" alt="Menu">
+        <div class="header-menu">
             <a href="#">
                 <img src="files/header-banki.svg">
             </a>
@@ -26,9 +28,9 @@
             <a href="#">Новости</a>
             <a href="#">Ещё</a>
         </div>
-        <div class="page__header-exit">
+        <div class="header-exit">
             <a href="#">
-                <img src="files/header-geo.svg">
+                <img class="header-geo" src="files/header-geo.svg">
             </a>
             <a href="#">
                 <img src="files/header-door.svg">
@@ -36,587 +38,587 @@
         </div>
     </header>
     <div class="page">
-        <div class="description">
-            <div class="description__text">
-                <div class="description__text_head">
-                    Поможем подобрать вклады по вашим потребностям
+            <div class="description">
+                <div class="description__text">
+                    <div class="description__text_head">
+                        Поможем подобрать вклады по вашим потребностям
+                    </div>
+                    <div class="description__text_body">
+                        Fusce porta auctor bibendum. Donec convallis tellus risus, pharetra facilisis leo bibendum eget. 
+                        Ut sit amet commodo nunc. 
+                        Phasellus hendrerit, dui quis mollis eleifend, lacus mauris accumsan lacus, ac cursus mi augue a justo. 
+                        Aliquam erat volutpat. 
+                    </div>
                 </div>
-                <div class="description__text_body">
-                    Fusce porta auctor bibendum. Donec convallis tellus risus, pharetra facilisis leo bibendum eget. 
-                    Ut sit amet commodo nunc. 
-                    Phasellus hendrerit, dui quis mollis eleifend, lacus mauris accumsan lacus, ac cursus mi augue a justo. 
-                    Aliquam erat volutpat. 
-                </div>
-            </div>
-            <div class="description__picture">
-                <img src="files/wallet-dynamic-gradient.png">
-            </div>
-        </div>
-        <div class="contribution">
-            <div class="contribution__text">
-                <div class="contribution__text_head"> 
-                    Вклады для души
-                </div>
-                <div class="contribution__text_body">
-                    Fusce porta auctor bibendum. Donec convallis tellus risus, pharetra facilisis leo bibendum eget. 
-                    Ut sit amet commodo nunc. Phasellus hendrerit, dui quis mollis eleifend, lacus
+                <div class="description__picture">
+                    <img src="files/wallet-dynamic-gradient.png">
                 </div>
             </div>
-            <div class="contribution__cards">
-                <div class="card">
-                    <div class="card__header">
-                        <img class="card__header_logo" src="files/Alfa-logo.svg">
-                        <div class="card__header_text"> Свои правила с Банки.ру</div>
+            <div class="contribution">
+                <div class="contribution__text">
+                    <div class="contribution__text_head"> 
+                        Вклады для души
                     </div>
-                    <div class="card__divider"></div>
-                    <div class="card__body">
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Ставка,%
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
-                                 от 9,3%
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Срок
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 181 дн
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Сумма
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 30 000-10 000 000 &#8381; 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card__button">
-                        Открыть вклад
+                    <div class="contribution__text_body">
+                        Fusce porta auctor bibendum. Donec convallis tellus risus, pharetra facilisis leo bibendum eget. 
+                        Ut sit amet commodo nunc. Phasellus hendrerit, dui quis mollis eleifend, lacus
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card__header">
-                        <img class="card__header_logo" src="files/Alfa-logo.svg">
-                        <div class="card__header_text"> Свои правила с Банки.ру</div>
-                    </div>
-                    <div class="card__divider"></div>
-                    <div class="card__body">
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Ставка,%
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
-                                 от 9,3%
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Срок
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 181 дн
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Сумма
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 30 000-10 000 000 &#8381; 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card__button">
-                        Открыть вклад
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__header">
-                        <img class="card__header_logo" src="files/Alfa-logo.svg">
-                        <div class="card__header_text"> Свои правила с Банки.ру</div>
-                    </div>
-                    <div class="card__divider"></div>
-                    <div class="card__body">
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Ставка,%
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
-                                 от 9,3%
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Срок
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 181 дн
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Сумма
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 30 000-10 000 000 &#8381; 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card__button">
-                        Открыть вклад
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__header">
-                        <img class="card__header_logo" src="files/Alfa-logo.svg">
-                        <div class="card__header_text"> Свои правила с Банки.ру</div>
-                    </div>
-                    <div class="card__divider"></div>
-                    <div class="card__body">
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Ставка,%
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
-                                 от 9,3%
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Срок
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 181 дн
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Сумма
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 30 000-10 000 000 &#8381; 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card__button">
-                        Открыть вклад
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="contribution">
-            <div class="contribution__text">
-                <div class="contribution__text_head"> 
-                    Вклады с повышенным процентом
-
-                </div>
-                <div class="contribution__text_body">
-                    On the other hand, we denounce with righteous indignation and dislike men who are so 
-                </div>
-            </div>
-            <div class="contribution__cards">
-                <div class="card">
-                    <div class="card__header">
-                        <img class="card__header_logo" src="files/Alfa-logo.svg">
-                        <div class="card__header_text"> Свои правила с Банки.ру</div>
-                    </div>
-                    <div class="card__divider"></div>
-                    <div class="card__body">
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Ставка,%
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
-                                 от 9,3%
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Срок
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 181 дн
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Сумма
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 30 000-10 000 000 &#8381; 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card__button">
-                        Открыть вклад
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__header">
-                        <img class="card__header_logo" src="files/Alfa-logo.svg">
-                        <div class="card__header_text"> Свои правила с Банки.ру</div>
-                    </div>
-                    <div class="card__divider"></div>
-                    <div class="card__body">
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Ставка,%
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
-                                 от 9,3%
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Срок
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 181 дн
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Сумма
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 30 000-10 000 000 &#8381; 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card__button">
-                        Открыть вклад
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__header">
-                        <img class="card__header_logo" src="files/Alfa-logo.svg">
-                        <div class="card__header_text"> Свои правила с Банки.ру</div>
-                    </div>
-                    <div class="card__divider"></div>
-                    <div class="card__body">
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Ставка,%
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
-                                 от 9,3%
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Срок
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 181 дн
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Сумма
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 30 000-10 000 000 &#8381; 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card__button">
-                        Открыть вклад
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__header">
-                        <img class="card__header_logo" src="files/Alfa-logo.svg">
-                        <div class="card__header_text"> Свои правила с Банки.ру</div>
-                    </div>
-                    <div class="card__divider"></div>
-                    <div class="card__body">
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Ставка,%
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
-                                 от 9,3%
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Срок
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 181 дн
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Сумма
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 30 000-10 000 000 &#8381; 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card__button">
-                        Открыть вклад
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="contribution">
-            <div class="contribution__text">
-                <div class="contribution__text_head"> 
-                    Вклады со страховкой
-                </div>
-                <div class="contribution__text_body">
-                    On the other hand, we denounce with righteous indignation and dislike 
-                    men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, 
-                </div>
-            </div>
-            <div class="contribution__cards">
-                <div class="card">
-                    <div class="card__header">
-                        <img class="card__header_logo" src="files/Alfa-logo.svg">
-                        <div class="card__header_text"> Свои правила с Банки.ру</div>
-                    </div>
-                    <div class="card__divider"></div>
-                    <div class="card__body">
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Ставка,%
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
-                                 от 9,3%
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Срок
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 181 дн
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Сумма
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 30 000-10 000 000 &#8381; 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card__button">
-                        Открыть вклад
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__header">
-                        <img class="card__header_logo" src="files/Alfa-logo.svg">
-                        <div class="card__header_text"> Свои правила с Банки.ру</div>
-                    </div>
-                    <div class="card__divider"></div>
-                    <div class="card__body">
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Ставка,%
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
-                                 от 9,3%
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Срок
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 181 дн
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Сумма
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 30 000-10 000 000 &#8381; 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card__button">
-                        Открыть вклад
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__header">
-                        <img class="card__header_logo" src="files/Alfa-logo.svg">
-                        <div class="card__header_text"> Свои правила с Банки.ру</div>
-                    </div>
-                    <div class="card__divider"></div>
-                    <div class="card__body">
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Ставка,%
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
-                                 от 9,3%
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Срок
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 181 дн
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Сумма
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 30 000-10 000 000 &#8381; 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card__button">
-                        Открыть вклад
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__header">
-                        <img class="card__header_logo" src="files/Alfa-logo.svg">
-                        <div class="card__header_text"> Свои правила с Банки.ру</div>
-                    </div>
-                    <div class="card__divider"></div>
-                    <div class="card__body">
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Ставка,%
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
-                                 от 9,3%
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Срок
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 181 дн
-                            </div>
-                        </div>
-                        <div class="card__body_row">
-                            <div style="color:#687082">
-                                Сумма
-                            </div>
-                            <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
-                                 30 000-10 000 000 &#8381; 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card__button">
-                        Открыть вклад
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="usf-staff">
-            <div style="font-weight: 500; font-size: 32px;line-height: 40px;">
-                Полезные материалы
-            </div>
-            <div class=usf-staff__cards>
-                <div class="usf-staff__card">
-                    <div class="usf-staff__card_header">
-                        <img src="files/car.png">
-                        <div style="font-size: 24px;font-weight: 500;line-height: 32px;">
-                            Как открыть свой таксопарк
-                        </div>
-                        <time datetime="2024-05-20" style="color:#687082;font-size: 12px;line-height: 16px;"> 20.05.2024</time>
-                    </div>
-                    <div class="card__divider"></div>
-                    <div class="usf-staff__card_body">
-                        <div class="card_body-row">
-                            <div>Не только НДФЛ:какие еще налоги затронет реформа</div><br>
-                            <time datetime="2024-05-29" style="color:#687082;font-size: 12px;line-height: 16px;"> 29.05.2024</time>
+                <div class="contribution__cards">
+                    <div class="card">
+                        <div class="card__header">
+                            <img class="card__header_logo" src="files/Alfa-logo.svg">
+                            <div class="card__header_text"> Свои правила с Банки.ру</div>
                         </div>
                         <div class="card__divider"></div>
-                        <div class="card_body-row">
-                            <div>Системные банки получат 256 млрд рублей для кредитования МСП</div><br>
-                            <time datetime="2023-12-18" style="color:#687082;font-size: 12px;line-height: 16px;"> 18.12.2023</time>
+                        <div class="card__body">
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Ставка,%
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
+                                    от 9,3%
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Срок
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    181 дн
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Сумма
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    30 000-10 000 000 &#8381; 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__button">
+                            Открыть вклад
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__header">
+                            <img class="card__header_logo" src="files/Alfa-logo.svg">
+                            <div class="card__header_text"> Свои правила с Банки.ру</div>
                         </div>
                         <div class="card__divider"></div>
-
-                    </div>
-                </div>
-                <div class="usf-staff__card">
-                    <div class="usf-staff__card_header">
-                        <img src="files/car.png">
-                        <div style="font-size: 24px;font-weight: 500;line-height: 32px;">
-                            Как открыть ИП без посещения налоговой
+                        <div class="card__body">
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Ставка,%
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
+                                    от 9,3%
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Срок
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    181 дн
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Сумма
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    30 000-10 000 000 &#8381; 
+                                </div>
+                            </div>
                         </div>
-                        
-                        <time datetime="2024-05-07" style="color:#687082;font-size: 12px;line-height: 16px;"> 07.05.2024</time>
-                    </div>
-                    <div class="card__divider"></div>
-                    <div class="usf-staff__card_body">
-                        <div class="card_body-row">
-                            <div>Не только НДФЛ:какие еще налоги затронет реформа</div><br>
-                            <time datetime="2024-05-29" style="color:#687082;font-size: 12px;line-height: 16px;"> 29.05.2024</time>
+                        <div class="card__button">
+                            Открыть вклад
                         </div>
-                        <div class="card__divider"></div>
-
                     </div>
-                </div>
-                <div class="usf-staff__card">
-                    <div class="usf-staff__card_header">
-                        <img src="files/car.png">
-                        <div style="font-size: 24px;font-weight: 500;line-height: 32px;">
-                            Что такое гарантийное письмо и в каких случаях оно необходимо
-                        </div>
-                        
-                        <time datetime="2024-05-02" style="color:#687082;font-size: 12px;line-height: 16px;"> 02.05.2024</time>
-                    </div>
-                    <div class="card__divider"></div>
-                    <div class="usf-staff__card_body">
-                        <div class="card_body-row">
-                            <div>Hyundai Motor продает свой завод в России за 10 тыс. рублей</div><br>
-                            <time datetime="2023-12-19" style="color:#687082;font-size: 12px;line-height: 16px;"> 19.12.2023</time>
+                    <div class="card">
+                        <div class="card__header">
+                            <img class="card__header_logo" src="files/Alfa-logo.svg">
+                            <div class="card__header_text"> Свои правила с Банки.ру</div>
                         </div>
                         <div class="card__divider"></div>
-
+                        <div class="card__body">
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Ставка,%
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
+                                    от 9,3%
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Срок
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    181 дн
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Сумма
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    30 000-10 000 000 &#8381; 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__button">
+                            Открыть вклад
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__header">
+                            <img class="card__header_logo" src="files/Alfa-logo.svg">
+                            <div class="card__header_text"> Свои правила с Банки.ру</div>
+                        </div>
+                        <div class="card__divider"></div>
+                        <div class="card__body">
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Ставка,%
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
+                                    от 9,3%
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Срок
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    181 дн
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Сумма
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    30 000-10 000 000 &#8381; 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__button">
+                            Открыть вклад
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
-    <footer class="page__footer">
-        <div class="page__footer-menu">
-        <a href="#">
-            <img src="files/footer-banki.svg" style="background-color:#EBF5FF;">
-        </a>
-        <div style="font-size: 14px; line-height:16px;color: #687082;"> САМЫЙ БОЛЬШОЙ ФИНАНСОВЫЙ МАРКЕТПЛЕЙС В РОССИИ*</div>
-        </div>
-        <div class="page__footer-icons">
+            <div class="contribution">
+                <div class="contribution__text">
+                    <div class="contribution__text_head"> 
+                        Вклады с повышенным процентом
+
+                    </div>
+                    <div class="contribution__text_body">
+                        On the other hand, we denounce with righteous indignation and dislike men who are so 
+                    </div>
+                </div>
+                <div class="contribution__cards">
+                    <div class="card">
+                        <div class="card__header">
+                            <img class="card__header_logo" src="files/Alfa-logo.svg">
+                            <div class="card__header_text"> Свои правила с Банки.ру</div>
+                        </div>
+                        <div class="card__divider"></div>
+                        <div class="card__body">
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Ставка,%
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
+                                    от 9,3%
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Срок
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    181 дн
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Сумма
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    30 000-10 000 000 &#8381; 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__button">
+                            Открыть вклад
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__header">
+                            <img class="card__header_logo" src="files/Alfa-logo.svg">
+                            <div class="card__header_text"> Свои правила с Банки.ру</div>
+                        </div>
+                        <div class="card__divider"></div>
+                        <div class="card__body">
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Ставка,%
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
+                                    от 9,3%
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Срок
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    181 дн
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Сумма
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    30 000-10 000 000 &#8381; 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__button">
+                            Открыть вклад
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__header">
+                            <img class="card__header_logo" src="files/Alfa-logo.svg">
+                            <div class="card__header_text"> Свои правила с Банки.ру</div>
+                        </div>
+                        <div class="card__divider"></div>
+                        <div class="card__body">
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Ставка,%
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
+                                    от 9,3%
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Срок
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    181 дн
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Сумма
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    30 000-10 000 000 &#8381; 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__button">
+                            Открыть вклад
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__header">
+                            <img class="card__header_logo" src="files/Alfa-logo.svg">
+                            <div class="card__header_text"> Свои правила с Банки.ру</div>
+                        </div>
+                        <div class="card__divider"></div>
+                        <div class="card__body">
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Ставка,%
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
+                                    от 9,3%
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Срок
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    181 дн
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Сумма
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    30 000-10 000 000 &#8381; 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__button">
+                            Открыть вклад
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contribution">
+                <div class="contribution__text">
+                    <div class="contribution__text_head"> 
+                        Вклады со страховкой
+                    </div>
+                    <div class="contribution__text_body">
+                        On the other hand, we denounce with righteous indignation and dislike 
+                        men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, 
+                    </div>
+                </div>
+                <div class="contribution__cards">
+                    <div class="card">
+                        <div class="card__header">
+                            <img class="card__header_logo" src="files/Alfa-logo.svg">
+                            <div class="card__header_text"> Свои правила с Банки.ру</div>
+                        </div>
+                        <div class="card__divider"></div>
+                        <div class="card__body">
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Ставка,%
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
+                                    от 9,3%
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Срок
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    181 дн
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Сумма
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    30 000-10 000 000 &#8381; 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__button">
+                            Открыть вклад
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__header">
+                            <img class="card__header_logo" src="files/Alfa-logo.svg">
+                            <div class="card__header_text"> Свои правила с Банки.ру</div>
+                        </div>
+                        <div class="card__divider"></div>
+                        <div class="card__body">
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Ставка,%
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
+                                    от 9,3%
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Срок
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    181 дн
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Сумма
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    30 000-10 000 000 &#8381; 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__button">
+                            Открыть вклад
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__header">
+                            <img class="card__header_logo" src="files/Alfa-logo.svg">
+                            <div class="card__header_text"> Свои правила с Банки.ру</div>
+                        </div>
+                        <div class="card__divider"></div>
+                        <div class="card__body">
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Ставка,%
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
+                                    от 9,3%
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Срок
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    181 дн
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Сумма
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    30 000-10 000 000 &#8381; 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__button">
+                            Открыть вклад
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__header">
+                            <img class="card__header_logo" src="files/Alfa-logo.svg">
+                            <div class="card__header_text"> Свои правила с Банки.ру</div>
+                        </div>
+                        <div class="card__divider"></div>
+                        <div class="card__body">
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Ставка,%
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:24px">
+                                    от 9,3%
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Срок
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    181 дн
+                                </div>
+                            </div>
+                            <div class="card__body_row">
+                                <div style="color:#687082">
+                                    Сумма
+                                </div>
+                                <div style="color:#162136;font-weight: 700;line-height: 32px;text-align: right;font-size:16px">
+                                    30 000-10 000 000 &#8381; 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__button">
+                            Открыть вклад
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="usf-staff">
+                <div style="font-weight: 500; font-size: 32px;line-height: 40px;">
+                    Полезные материалы
+                </div>
+                <div class=usf-staff__cards>
+                    <div class="usf-staff__card">
+                        <div class="usf-staff__card_header">
+                            <img src="files/car.png">
+                            <div style="font-size: 24px;font-weight: 500;line-height: 32px;">
+                                Как открыть свой таксопарк
+                            </div>
+                            <time datetime="2024-05-20" style="color:#687082;font-size: 12px;line-height: 16px;"> 20.05.2024</time>
+                        </div>
+                        <div class="card__divider"></div>
+                        <div class="usf-staff__card_body">
+                            <div class="card_body-row">
+                                <div>Не только НДФЛ:какие еще налоги затронет реформа</div><br>
+                                <time datetime="2024-05-29" style="color:#687082;font-size: 12px;line-height: 16px;"> 29.05.2024</time>
+                            </div>
+                            <div class="card__divider"></div>
+                            <div class="card_body-row">
+                                <div>Системные банки получат 256 млрд рублей для кредитования МСП</div><br>
+                                <time datetime="2023-12-18" style="color:#687082;font-size: 12px;line-height: 16px;"> 18.12.2023</time>
+                            </div>
+                            <div class="card__divider"></div>
+
+                        </div>
+                    </div>
+                    <div class="usf-staff__card">
+                        <div class="usf-staff__card_header">
+                            <img src="files/car.png">
+                            <div style="font-size: 24px;font-weight: 500;line-height: 32px;">
+                                Как открыть ИП без посещения налоговой
+                            </div>
+                            
+                            <time datetime="2024-05-07" style="color:#687082;font-size: 12px;line-height: 16px;"> 07.05.2024</time>
+                        </div>
+                        <div class="card__divider"></div>
+                        <div class="usf-staff__card_body">
+                            <div class="card_body-row">
+                                <div>Не только НДФЛ:какие еще налоги затронет реформа</div><br>
+                                <time datetime="2024-05-29" style="color:#687082;font-size: 12px;line-height: 16px;"> 29.05.2024</time>
+                            </div>
+                            <div class="card__divider"></div>
+
+                        </div>
+                    </div>
+                    <div class="usf-staff__card">
+                        <div class="usf-staff__card_header">
+                            <img src="files/car.png">
+                            <div style="font-size: 24px;font-weight: 500;line-height: 32px;">
+                                Что такое гарантийное письмо и в каких случаях оно необходимо
+                            </div>
+                            
+                            <time datetime="2024-05-02" style="color:#687082;font-size: 12px;line-height: 16px;"> 02.05.2024</time>
+                        </div>
+                        <div class="card__divider"></div>
+                        <div class="usf-staff__card_body">
+                            <div class="card_body-row">
+                                <div>Hyundai Motor продает свой завод в России за 10 тыс. рублей</div><br>
+                                <time datetime="2023-12-19" style="color:#687082;font-size: 12px;line-height: 16px;"> 19.12.2023</time>
+                            </div>
+                            <div class="card__divider"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <footer class="footer">
+            <div class="footer-menu">
             <a href="#">
-                <img src="files/dzen.svg">
+                <img src="files/footer-banki.svg" style="background-color:#EBF5FF;">
             </a>
-            <a href="#">
-                <img src="files/twitter.svg">
-            </a>
-            <a href="#">
-                <img src="files/vk.svg">
-            </a>
-            <a href="#">
-                <img src="files/tg.svg">
-            </a>
-            <a href="#">
-                <img src="files/mates.svg">
-            </a>
-        </div>
-    </footer>
+            <div style="font-size: 14px; line-height:16px;color: #687082;"> САМЫЙ БОЛЬШОЙ ФИНАНСОВЫЙ МАРКЕТПЛЕЙС В РОССИИ*</div>
+            </div>
+            <div class="footer-icons">
+                <a href="#">
+                    <img src="files/dzen.svg">
+                </a>
+                <a href="#">
+                    <img src="files/twitter.svg">
+                </a>
+                <a href="#">
+                    <img src="files/vk.svg">
+                </a>
+                <a href="#">
+                    <img src="files/tg.svg">
+                </a>
+                <a href="#">
+                    <img src="files/mates.svg">
+                </a>
+            </div>
+    </footer>  
     
 </body>
 </html>
