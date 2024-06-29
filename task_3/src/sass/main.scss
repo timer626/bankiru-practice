@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+$clr_black: black;
+$clr_page: #EEE;
+$clr_block: white;
+$grey_text: #687082;
+$shw_card: 0px 3px 7px 2px #b0abab;
+$shw_Header_line:0px 2px 2px -2px #ada9a9;
+$clr_but: #039be5;
+$clr_but_text: #FFF;
+$clr_footer: #e0f5ff;
+$clr_footer_mobile: white;
+
+
+@mixin font($f_size,$clr){
+    font-family: 'Roboto';
+    color: $clr;
+    font-size: $f_size;
+}
+
+
+.Roboto{
+    font-family: "Roboto";
+}
+
+
+body{
+    margin: 0px;
+}
+
+.header-top
+{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    
+}
+
+.header-row {
+    
+    display: flex;
+    width: 95%;
+    height: 100%;
+    
+}
+
+
+.header-nav-ul{
+    display: none;
+}
+
+.header-row-logo
+{   display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 147px;
+    height: 100%;
+}
+
+.header-logo__icon{
+    height: 40%;
+    width: 100%;
+}
+
+.header-row-tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+}
+
+.row-tab{
+
+    @include font(85%,$clr_black);
+    display:flex;
+    justify-content: space-between;
+    font-weight: bold;
+    width: 95%;
+    height: 18.75%;
+    
+}
+
+
+
+
+.header-row-icons{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+}
+
+.row-icons{
+    display: flex;
+    justify-content: space-between;
+    height: 22.5%;
+    width: 40%;
+}
+
+
+
+.body_main{
+    margin: 0px;
+    height: 2820px;
+    width: 100%;
+    background-color: $clr_page;
+}
+
+.webpage{
+    height: 100%;
+    width: 95%;
+    padding: 0px 2.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+}
+
+.block1{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    height: 340px;
+    width: 100%;
+
+    .block1-text{
+        @include font(medium,$clr_black);
+        height: 200px;
+        width: 55%;
+    }
+    
+    
+    .block1-img_wallet{
+        height: 300px;
+    }
+}
+
+
+.block2{
+    height: 460px;
+    width: 100%;
+}
+
+.block2-text{
+    @include font(medium,$clr_black);
+    height: 120px;
+    width: 55%;
+    padding-bottom: 20px;
+}
+    
+.block-deposit-card{
+    width: 100%;
+    height: 300px;
+}
+
+.scroller{
+    display: flex;
+    gap: 2.5%;
+    height: 100%;
+    width: 100%;
+}
+
+.deposit-card{
+    height: 100%;
+    width: 24%;
+    background-color: $clr_block;
+    border-radius: 16px;
+    box-shadow: $shw_card;
+}
+
+.deposit-card_alignment{
+    width: 80%;
+    height: 100%;
+    padding: 0% 10%;
+}
+
+.card-header{
+    height: 27%;
+    width: 100%;
+    box-shadow: $shw_Header_line;
+}
+
+.card-header_row{
+    display: flex;
+    gap: 10%;
+    height: 50%;
+    width: 100%;
+    padding-bottom: 8%;
+    padding-top: 12%;
+
+    .card-header__img{
+        width: 40%;  
+    }
+    
+    
+    .card-header__text{
+        @include font(80%,$clr_black);
+        width: 50%;
+        text-align: right;
+    }
+}
+
+
+
+
+.card-body{
+    height: 73%;
+    width: 100%;
+}
+
+.card-body-text{                               
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 55%;
+    width: 100%;
+}
+
+.card-body-text-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 30px;
+
+    .card-body-text-row__el1{
+        @include font(12px,$grey_text);                                                
+    }
+    
+    
+    .card-body-text-row__el2{
+        @include font(13px,$clr_black);   
+        font-weight: bold;
+    }
+    
+    .card-body-text-row__el2_Big{
+        font-size: 20px;
+    }
+}
+
+
+
+.card-block-button{
+    display: flex;
+    align-items: center;
+    height: 40%;
+
+
+    .card-button{
+        width: 100%;
+        height: 50%;
+        border-radius: 8px;
+        background-color: $clr_but;
+        color: $clr_but_text;
+        border: 0px;
+    
+    }
+}
+                       
+.block3{
+    width: 100%;
+}
+
+.block3-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 606px;
+    width: 100%;
+    background-color: $clr_block;
+    border-radius: 16px;
+}
+
+.block3-body-grid{
+    height: 85%;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    grid-column-gap:1.2em;
+    grid-template-rows: 65% 17.5% 17.5%;
+    grid-auto-rows: minmax(90px,auto);
+}
+
+.date{
+    @include font(60%,$grey_text);
+    padding-bottom: 5%;
+    padding-top: 4%;
+
+    & .grid-row-el__date{
+        padding-top:1.5%;
+        padding-bottom: 5.5%;
+    }
+
+}
+
+.grid-header-row-el{
+    display: grid;
+    grid-template-rows: 70% 20% 10%;
+    box-shadow: $shw_Header_line;
+    grid-auto-rows: minmax(16px,auto);
+
+    .img-car{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+                    
+.grid-row-el{
+    display: grid;
+    grid-template-rows: 65% 35%;
+    box-shadow: $shw_Header_line;
+    grid-auto-rows: minmax(16px,auto);
+}
+    
+    
+.grid-row-el__text{
+    @include font(85%,$clr_black);
+    padding-top: 6%;
+
+}
+
+.row__all-deposits{
+display: none;
+}
+
+.footer-row{
+    display: flex;
+    width: 95%;
+    height: 100%;
+}
+
+.footer-top{
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        width: 100%;
+        background-color: $clr_footer;
+}
+    
+    
+.footer-row-logo
+{   display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+
+    .footer-logo__icon{
+        height: 25%;
+        width: 100%;
+    }
+}        
+
+    
+.footer-row-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+
+    .footer-text{
+        @include font(65%,$grey_text);
+        height: 10%;
+        width: 90%;
+    }
+}
+    
+    
+
+.footer-row-icons{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+        
+
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+
+
+
+.header-row{
+    justify-content: space-between;
+}
+.header-row-tab, .header__icon1{
+    display: none;
+}
+
+.header-nav-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+}
+.menu_icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18px;
+    width: 20px;
+
+    &:hover > .block-tab-ul{
+        display: initial;
+    }
+}
+
+
+    
+.menu_icon_el1{
+    width: 100%;
+    height: 14%;
+    border-radius: 1px;
+    background-color:   $clr_black;
+}
+
+.menu_icon_el2{
+    width: 55%;
+    height: 14%;
+    border-radius: 1px;
+    background-color: $clr_black;
+}
+
+
+.block-tab-ul{
+    position: absolute;
+    top: 38px;
+    display: none;
+    left: 9.6%;
+    height: 286px;
+    width: 100px;
+    background-color: $clr_block;
+}
+
+.tab-ul{
+    @include font(medium,$clr_black);
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+
+}
+
+.tab-ul-li{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+
+.tab-ul-li__el{
+    color:$clr_black;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+
+
+.header-row-logo{
+width: 80%;
+}
+
+.header-row-icons{
+width: 10%;
+}
+
+
+
+.body_main{
+height: auto;
+}
+
+.webpage{
+gap: 30px;
+}
+
+.block1{
+    height: auto;
+
+    .block1-img_wallet{
+        height: 200px;
+    }
+
+    .block1-text{
+        height: auto;
+    }
+}
+  
+.block2{
+    height: auto;
+}
+
+.block2-text{
+    width: 100%;
+    padding-bottom: 10px;
+    height: auto;
+}       
+.block-deposit-card{
+    width: 100%;
+    height: 610px;
+}
+
+.scroller{
+    display: grid;
+    grid-gap: 3%;
+    grid-template-columns: 48.5% 48.5%;
+}
+
+.deposit-card{
+    width: 100%;
+}
+    
+
+.block3{
+    display: none;
+}
+
+
+
+
+.footer-row{
+    justify-content: space-between;
+}
+
+.footer-row-text{
+    display: none;
+}
+
+
+.row-icons{
+    width: 65%;
+}
+
+.row__all-deposits{
+    display: none;
+}
+
+
+}
+
+
+@media screen and (max-width: 320px) {
+
+.header-top{
+    height: 60px;
+}
+
+.header-row-tab , .header__icon1{
+    display: none;
+}
+
+.header-row{
+    justify-content: space-between;
+}
+
+.header-nav-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+}
+
+.menu_icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10px;
+    width: 12px;
+
+    &:hover > .block-tab-ul{
+        display: initial;
+    }
+}
+
+
+
+.menu_icon_el1{
+    width: 100%;
+    height: 14%;
+    border-radius: 1px;
+    background-color: #000;
+}
+
+.menu_icon_el2{
+    width: 55%;
+    height: 14%;
+    border-radius: 1px;
+    background-color: $clr_black;
+}
+
+
+.block-tab-ul{
+    position: absolute;
+    top: 32px;
+    display: none;
+    left: 12%;
+    height: 286px;
+    width: 100px;
+    background-color: $clr_block;
+}
+
+.tab-ul{
+    @include font(medium,$clr_black);
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+}
+
+.tab-ul-li{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+
+.tab-ul-li__el{
+    color: $clr_black;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+
+.header-row-logo{
+    width: 80%;
+}
+
+.header-row-icons{
+    width: 10%;
+    justify-content: center;
+}
+
+
+
+
+.body_main{
+    height: auto;
+}
+.webpage{
+    gap: 20px;
+}
+
+.block1{
+    padding-top: 10px;
+    height: auto;
+
+    .block1-img_wallet{
+        display: none;
+    }
+    
+
+    
+    .block1-text{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+
+
+.webpage__text_h{
+    font-size: 1.2em;
+}
+
+.webpage__text{
+    font-size: 14.5px
+}
+
+
+.block2{
+    height: auto;
+}
+
+.block2-text{
+    height: auto;
+    width: 100%;
+}
+
+.block-deposit-card{
+    height: 270px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+.scroller{
+    width: 300%;
+}
+.deposit-card {
+    width: 170px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+
+
+.card-header_row{
+    padding: 0px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .card-header__img{
+        padding-top: 22px;
+        align-self: center;
+        width: 65%;
+    }
+    
+    .card-header__text{
+        width: 100%;
+        font-size: 11px;
+        text-align: center;
+        padding-bottom: 12px;
+    
+    }
+}
+
+
+.card-body-text-row{
+    .card-body-text-row__el1{
+        font-size: 10px;
+    }
+    
+    .card-body-text-row__el2{
+        font-size: 10px;
+    }
+    
+    .card-body-text-row__el2_Big{
+        font-size: 15px;
+    }
+}
+                        
+
+.block3{
+    display: none;
+}
+
+
+.footer-top{
+    height: 60px;
+    background-color: $clr_block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-row{
+    display: none;
+}
+
+.row__all-deposits{
+    display: initial;
+    height: 32px;
+}
+
+
+}
